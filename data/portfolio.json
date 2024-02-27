@@ -1,1 +1,129 @@
-{"name":"Chetan","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Chetan Verma - curious","headerTaglineThree":"designer and devloper","headerTaglineFour":" based in New Delhi, India.","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],"projects":[{"id":"1","title":"Project One Test","description":"Web Design","imageSrc":"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"2","title":"Project Two","description":"Web Development","imageSrc":"https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"3","title":"Project Three","description":"Design","imageSrc":"https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"4","title":"Project Four","description":"Marketing","imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"5","title":"Project Five","description":"Development","imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],"services":[{"id":"1","title":"Art Direction","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},{"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},{"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],"aboutpara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python","Go"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD","AWS"]}}
+{
+  "name": "Renderex",
+  "headerTaglineOne": "Hey 👋  I'm William",
+  "headerTaglineTwo": "Thanks for checking out my portfolio.",
+  "headerTaglineThree": "Developer, Product Designer, and Entrepreneur.",
+  "headerTaglineFour": "",
+  "showCursor": true,
+  "showBlog": false,
+  "darkMode": false,
+  "showResume": true,
+  "socials": [
+    {
+      "id": "1",
+      "title": "Github",
+      "link": "https://github.com/reckziegelwilliam"
+    },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/william-reckziegel/"
+    },
+    {
+      "id": "3",
+      "title": "Twitter",
+      "link": "https://twitter.com/liamreckziegel"
+    },
+    { "id": "4", "title": "Blog", "link": "https://renderex.netlify.com/blog" },
+    { "id": "5", "title": "Email", "link": "mailto:reckziegel.william@gmail.com" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Intel",
+      "description": "In-store Shopper Recommendation Tool",
+      "tagline": "Overhauled system's Distributed Kiosk Application Network up to Modern standards",
+      "imageSrc": "/projects/project_one_intel.svg",
+      "stack": "Electron, TypeScript, AWS S3, Lambda, DynamoDB, React, PouchDB",
+      "url": "https://www.intel.com/content/www/us/en/retail/overview.html"
+    },
+    {
+      "id": "2",
+      "title": "Have You Met, Inc.",
+      "description": "Dating & Social Network Startup",
+      "tagline": "Founding Engineer - Full Stack iOS/Android App",
+      "imageSrc": "/projects/project_two_hym.svg",      
+      "url": "https://www.hihaveyoumet.com/"
+    },
+    {
+      "id": "3",
+      "title": "SeedMoney",
+      "description": "Web App, Farmer Platform Providing Personalized Grant Recommendations",
+      "tagling": "Project - 200 active users in NH & VT",
+      "imageSrc": "/projects/project_two_intel.svg",
+      "url": "http://chetanverma.com/"
+    },
+    {
+      "id": "4",
+      "title": "Luminaut.io - Agency Site & SaaS Platform",
+      "description": "LIVE - Website including Web App",
+      "imageSrc": "/projects/project_two_intel.svg",
+      "url": "http://chetanverma.com/"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Systems & Applications",
+      "description": "Secure | Scalable | Performant"
+    },
+    {
+      "id": "2",
+      "title": "Product",
+      "description": "User Centric Design, Prototyping, and Product Development."
+    },
+    {
+      "id": "3",
+      "title": "Marketing",
+      "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
+    },
+    {
+      "id": "4",
+      "title": "Marketing",
+      "description": "Build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
+    }
+  ],
+  "aboutpara": "",
+  "resume": {
+    "tagline": "I'm a software engineer, product designer, and entrepreneur. I have delivered world-class user experiences. MERN stack specialty.",
+    "description": " Well-versed with React, Javascript, and most of Web frameworks.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "Jan 2023 - Present",
+        "type": "Full Time",
+        "position": "Full Stack Engineer",
+        "bullets": "● Leading the development of a MERN stack-based SaaS platform to optimize eCommerce operations, currently achieving a 20% increase in client operational efficiency. ● Orchestrated Agile/Scrum practices, enhancing collaboration between the core team and outsourced developers, along with marketing teams for product alignment. ● Initiated comprehensive market and technical research, integrating eCommerce trends into the platform's design, ensuring market relevance and competitive edge."
+      },
+      {
+        "id": "2",
+        "dates": "Aug 2023 - Present",
+        "type": "Part Time",
+        "position": "Founding Frontend Engineer at Have You Met, Inc.",
+        "bullets": "● Directed a lean frontend development team to launch MVPs for a social networking app, using React Native and Node.js, leading to a 30% surge in user engagement. ● Constructed a robust internal data platform (social API) using AWS, enhancing user matching efficiency and expanding user base and market reach by 25%. ● Implemented CI/CD practices (Github Actions) for rapid iteration and deployment, facilitating a culture of rapid learning and adaptation to user feedback. ● Hosted weekly talks for knowledge exchange within the team."
+      },
+      {
+        "id": "3",
+        "dates": "July 2019 - July 2020",
+        "type": "Contract",
+        "position": "Full Stack Application Developer at Intel",
+        "bullets": "● Developed and executed a comprehensive marketing strategy, increasing client acquisition by 40% and retention by 25%. ● Designed and implemented a data-driven marketing dashboard, enabling the team to make data-informed decisions, leading to a 30% increase in marketing ROI. ● Led the development of a marketing automation platform, reducing the time spent on repetitive tasks by 50% and increasing the team's productivity by 30%."
+      },      
+      {
+        "id": "2",
+        "dates": "July 2020 - March 2022",
+        "type": "Full Time",
+        "position": "Founding Frontend Engineer at Have You Met, Inc.",
+        "bullets": "● Directed a lean frontend development team to launch MVPs for a social networking app, using React Native and Node.js, leading to a 30% surge in user engagement. ● Constructed a robust internal data platform (social API) using AWS, enhancing user matching efficiency and expanding user base and market reach by 25%. ● Implemented CI/CD practices (Github Actions) for rapid iteration and deployment, facilitating a culture of rapid learning and adaptation to user feedback. ● Hosted weekly talks for knowledge exchange within the team."
+      }
+    ],
+    "education": {
+      "universityName": "Reed College",
+      "universityDate": "2015-2019",
+      "universityPara": "B of A - Dual in Computational Philosophy and Cognitive Psychology"
+    },
+    "languages": [ "JavaScript", "Python", "SQL", "Mongo", "Java", "Scala", "Ruby", "Go", "C/C++/C#", "Bash", "Apache"],
+    "frameworks": ["React", "Typescript", "NodeJs", "React Native", "Angular", "VueJS", "Flask", "Django"],
+    "others": ["Figma", "Sketch", "Adobe Suite", "AWS", "GCP", ""]
+  }
+}
