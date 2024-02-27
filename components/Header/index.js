@@ -1,6 +1,7 @@
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
@@ -29,6 +30,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               >
                 {name}.
               </h1>
+              <Image 
+                className="h-3"
+                alt="William Reckziegel logo"
+                src="/images/logo.svg"
+                width={100}
+                height={100}
+              ></Image>
 
               <div className="flex items-center">
                 {data.darkMode && (
