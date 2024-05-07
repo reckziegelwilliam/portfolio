@@ -12,6 +12,20 @@ module.exports = {
       desktop: "1280px",
       laptopl: "1440px",
     },
+    extend: {
+      colors: {
+        darkgray: "#333333",
+        lightgray: "#F5F5F5",
+        primary: "#FD6084",
+        secondary: "#00A3DA",
+        tertiary: "#FF6347",
+        quaternary: "#FF4500",
+      },
+      fontFamily: {
+        primary: ["Poppins", "sans-serif"],
+        secondary: ["Montserrat", "sans-serif"],
+      },
+    },
     extend: {},
   },
   plugins: [],

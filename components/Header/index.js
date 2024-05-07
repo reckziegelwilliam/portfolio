@@ -23,20 +23,19 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
-            <div className="flex items-center justify-between p-2 laptop:p-0">
+            <div className="flex items-center justify-between p-2 laptop:p-0 object-fit">
               <h1
                 onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
+                className="font-medium p-2 laptop:p-0 link color-black"
               >
                 {name}.
+                <Image
+                  className="h-6 object-fit"
+                  src="/images/graphic_one.svg"
+                  alt="William Reckziegel logo"
+                  layout="fill"
+                ></Image>
               </h1>
-              <Image 
-                className="h-3"
-                alt="William Reckziegel logo"
-                src="/images/logo.svg"
-                width={100}
-                height={100}
-              ></Image>
 
               <div className="flex items-center">
                 {data.darkMode && (
@@ -45,18 +44,20 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    <img
-                      className="h-6"
+                    <Image
+                      className="h-6 objec-fit"
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
-                    ></img>
+                      alt="Dark Mode Toggle"
+                      layout="fill"
+                    ></Image>
                   </Button>
                 )}
 
                 <Popover.Button>
-                  <img
-                    className="h-5"
+                  <Image
+                    className="h-5 object-fit"
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -66,7 +67,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
-                  ></img>
+                    alt="Menu popover button"
+                    layout="fill"
+                  ></Image>
                 </Popover.Button>
               </div>
             </div>
@@ -136,9 +139,22 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           className="font-medium cursor-pointer mob:p-2 laptop:p-0"
         >
           {name}.
+          <Image
+            className="h-6 h-full place-content-center w-full mob:p-0 laptop:p-0"
+            alt="William Reckziegel logo"
+            src="/images/graphic_one.svg"
+            height={24}
+            width={24}
+          ></Image>
         </h1>
+        <Image 
+          className="h-6 object-fit"
+          alt="William Reckziegel logo"
+          src="/images/logo.svg"
+          layout="fill"
+        ></Image>
         {!isBlog ? (
-          <div className="flex">
+          <div className="flex object-fit">
             <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleAboutScroll}>About</Button>
             {showBlog && (
@@ -160,10 +176,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
+                <Image
                   className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                  alt="Dark Mode Toggle"
+                  layout="fill"
+                ></Image>
               </Button>
             )}
           </div>
@@ -190,10 +208,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
+                <Image
+                  className="h-6 object-fit"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                  alt="Dark Mode Toggle"
+                  layout="fill"
+                ></Image>
               </Button>
             )}
           </div>

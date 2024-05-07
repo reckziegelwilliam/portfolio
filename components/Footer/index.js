@@ -10,13 +10,10 @@ const Footer = ({}) => {
         <div>
           <h1 className="text-2xl text-bold">Contact.</h1>
           <div className="mt-10">
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              LET&apos;S WORK
+            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl font-extrabold">
+              LET&apos;S RENDER RESULTS.
             </h1>
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              TOGETHER
-            </h1>
-            <Button type="primary" href="https://www.calendly/">Schedule a call</Button>
+            <Button type="primary" href="https://calendly.com/reckziegel-william/30min">Schedule a call</Button>
             <div className="mt-10">
               <Socials />
             </div>

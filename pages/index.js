@@ -5,6 +5,7 @@ import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
@@ -65,37 +66,73 @@ export default function Home() {
           handleAboutScroll={handleAboutScroll}
         />
         <div className="laptop:mt-20 mt-10">
-          <div className="mt-5">
+          <div className="mt-10">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl text-bold font-black tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
+            <h1 className="mb-auto mx-auto flex item-center align-center">
+              <div className="shadow-l p-0 rounded-[100px]">
+                <Image
+                  className="object-fit shadow-lg"
+                  alt="Circular graphic"
+                  src="/images/graphic_one.svg"
+                  height={100}
+                  width={100}
+                ></Image>
+              </div>
+              <div className="p-0">
+                <Image
+                  className="shadow-xl p-4" 
+                  alt="Circular graphic"
+                  src="/images/graphic_two.svg"
+                  height={100}
+                  width={140}
+                ></Image>
+              </div>
+              <div className="drop-shadow-xl rounded-[100px] m-0">
+                <Image
+                  alt="Circular graphic"
+                  src="/images/graphic_one.svg"
+                  height={100}
+                  width={100}
+                ></Image>
+              </div>
+            </h1>
             <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl text-bold tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-l tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-l tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-full"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-xl tablet:text-6xl laptop:text-6xl laptopl:text-xl p-1 tablet:p-2 w-full laptop:w-4/5"
+              className="text-xl color-black tablet:text-6xl laptop:text-6xl laptopl:text-xl p-1 tablet:p-2 w-full laptop:w-full"
             >
               {data.headerTaglineFour}
             </h1>
           </div>
+          <div className="mt-10 color-black">
+            <Button
+              type="primary"
+              href="https://calendly.com/reckziegel-william/30min"
+            >
+              Schedule a call
+            </Button>
+          </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          <Socials className="mt-2 bg-black text-white laptop:mt-5 p-4 rounded-[4px]" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-4xl font-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
@@ -104,6 +141,8 @@ export default function Home() {
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
+                tagline={project.tagline}
+                stack={project.stack}
                 onClick={() => window.open(project.url)}
               />
             ))}

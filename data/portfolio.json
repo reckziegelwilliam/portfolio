@@ -1,9 +1,9 @@
 {
-  "name": "Renderex",
-  "headerTaglineOne": "Hey 👋  I'm William",
-  "headerTaglineTwo": "Thanks for checking out my portfolio.",
-  "headerTaglineThree": "Developer, Product Designer, and Entrepreneur.",
-  "headerTaglineFour": "",
+  "name": "William Reckziegel",
+  "headerTaglineOne": "William Reckziegel",
+  "headerTaglineTwo": "Portfolio",
+  "headerTaglineThree": "Software Engineer",
+  "headerTaglineFour": "Full Stack, DevOps, Cloud Product Designer, and Entrepreneur",
   "showCursor": true,
   "showBlog": false,
   "darkMode": false,
@@ -24,8 +24,7 @@
       "title": "Twitter",
       "link": "https://twitter.com/liamreckziegel"
     },
-    { "id": "4", "title": "Blog", "link": "https://renderex.netlify.com/blog" },
-    { "id": "5", "title": "Email", "link": "mailto:reckziegel.william@gmail.com" }
+    { "id": "4", "title": "Email", "link": "mailto:reckziegel.william@gmail.com" }
   ],
   "projects": [
     {
@@ -55,21 +54,22 @@
     },
     {
       "id": "4",
-      "title": "Luminaut.io - Agency Site & SaaS Platform",
-      "description": "LIVE - Website including Web App",
-      "imageSrc": "/projects/project_two_intel.svg",
-      "url": "http://chetanverma.com/"
+      "title": "Luminaut - Agency Site & SaaS Platform",
+      "description": "UPDATING - Platform for SMBs & Creators to manage their online presence and marketing efforts.",
+      "tagline": "Project - Available to Clients Only",
+      "imageSrc": "/projects/project_four_luminaut.svg",
+      "url": "http://luminaut.io/"
     }
   ],
   "services": [
     {
       "id": "1",
-      "title": "Systems & Applications",
+      "title": "System & Application Engineering",
       "description": "Secure | Scalable | Performant"
     },
     {
       "id": "2",
-      "title": "Product",
+      "title": "Product Design",
       "description": "User Centric Design, Prototyping, and Product Development."
     },
     {
@@ -79,13 +79,13 @@
     },
     {
       "id": "4",
-      "title": "Marketing",
+      "title": "Web Development",
       "description": "Build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
     }
   ],
   "aboutpara": "",
   "resume": {
-    "tagline": "I'm a software engineer, product designer, and entrepreneur. I have delivered world-class user experiences. MERN stack specialty.",
+    "tagline": "I'm a software engineer, product designer, and entrepreneur. I have delivered world-class user experiences. Specialty in MERN Stack",
     "description": " Well-versed with React, Javascript, and most of Web frameworks.",
     "experiences": [
       {

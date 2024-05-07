@@ -44,6 +44,7 @@ const Edit = () => {
           id: uuidv4(),
           title: "New Project",
           description: "Web Design & Development",
+          tagline: "Lorem Ipsum is simply dummy text of the printing",
           imageSrc:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
 
@@ -77,6 +78,7 @@ const Edit = () => {
           title: "New Service",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+          tagline: "Lorem Ipsum is simply dummy text of the printing",
         },
       ],
     });
