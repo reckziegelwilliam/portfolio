@@ -1,10 +1,7 @@
 import { useRef } from "react";
-import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
-import Socials from "../components/Socials";
-import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
+
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -12,9 +9,15 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
 
+import Header from "../components/Header";
+import ServiceCard from "../components/ServiceCard";
+import Socials from "../components/Socials";
+import WorkCard from "../components/WorkCard";
+import BusinessCard from "../components/BusinessCard";
 
 // Local Data
 import data from "../data/portfolio.json";
+import Resume from "./resume";
 
 export default function Home() {
   // Ref
@@ -42,6 +45,8 @@ export default function Home() {
     });
   };
 
+
+
   useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
@@ -51,10 +56,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
+    <section className="bg">
+    <div className={`relative ${data.booleans.showCursor && "cursor-none"}`}>
+      {data.booleans.showCursor && <Cursor />}
       <Head>
-        <title>{data.name}</title>
+        <title>{data.headers.name}</title>
       </Head>
 
       <div className="gradient-circle"></div>
@@ -71,7 +77,7 @@ export default function Home() {
               ref={textOne}
               className="text-3xl text-bold font-black tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
-              {data.headerTaglineOne}
+              {data.headers.headerTaglineOne}
             </h1>
             <h1 className="mb-auto mx-auto flex item-center align-center">
               <div className="shadow-l p-0 rounded-[100px]">
@@ -85,7 +91,7 @@ export default function Home() {
               </div>
               <div className="p-0">
                 <Image
-                  className="shadow-xl p-4" 
+                  className="shadow-xl p-4"
                   alt="Circular graphic"
                   src="/images/graphic_two.svg"
                   height={100}
@@ -105,22 +111,22 @@ export default function Home() {
               ref={textTwo}
               className="text-3xl text-bold tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
-              {data.headerTaglineTwo}
+              {data.headers.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
               className="text-l tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-full"
             >
-              {data.headerTaglineThree}
+              {data.headers.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
               className="text-xl color-black tablet:text-6xl laptop:text-6xl laptopl:text-xl p-1 tablet:p-2 w-full laptop:w-full"
             >
-              {data.headerTaglineFour}
+              {data.headers.headerTaglineFour}
             </h1>
           </div>
-          <div className="mt-10 color-black">
+          <div className="mt-10 gradient-button">
             <Button
               type="primary"
               href="https://calendly.com/reckziegel-william/30min"
@@ -133,7 +139,24 @@ export default function Home() {
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-4xl font-bold">Work.</h1>
-
+          <div className="">
+            <h2 className="mt-5 text-xl laptop:text-3xl">
+              Delivering Lifecycle Solutions to SMBs, Startups and Online Creators
+            </h2>
+            <div className="mt-5 gap-4">
+              {data.business && (
+                <BusinessCard
+                  key={data.business.id}
+                  title={data.business.title}
+                  subtitle={data.business.subtitle}
+                  description={data.business.description}
+                  tagline={data.business.tagline}
+                  img={data.business.imageSrc}
+                  onClick={() => window.open(data.business.url)}
+                />
+              )}
+            </div>
+          </div>
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
               <WorkCard
@@ -161,22 +184,16 @@ export default function Home() {
             ))}
           </div>
         </div>
-        {/* This button should not go into production */}
-        {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
+            <Resume
+            />
           </p>
         </div>
         <Footer />
       </div>
     </div>
+    </section>
   );
 }

@@ -7,12 +7,12 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const { headers, booleans } = data;
+
+const Header = ({ handleWorkScroll, handleAboutScroll, handleServiceScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
-  const { name, showBlog, showResume } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -28,7 +28,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link color-black"
               >
-                {name}.
+                {headers.name}.
                 <Image
                   className="h-6 object-fit"
                   src="/images/graphic_one.svg"
@@ -38,7 +38,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </h1>
 
               <div className="flex items-center">
-                {data.darkMode && (
+                {booleans.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -85,7 +85,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
+                  {booleans.showResume && (
                     <Button
                       onClick={() =>
                         window.open("mailto:hello@chetanverma.com")

@@ -25,3 +25,9 @@ export function getRandomImage() {
   ];
   return randomImageUrl[Math.floor(Math.random() * randomImageUrl.length)];
 }
+
+export const handleRefScroll = (ref) => {
+  ref.current.scrollIntoView({
+    behavior: "smooth",
+  });
+}

@@ -13,7 +13,7 @@ const Footer = ({}) => {
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl font-extrabold">
               LET&apos;S RENDER RESULTS.
             </h1>
-            <Button type="primary" href="https://calendly.com/reckziegel-william/30min">Schedule a call</Button>
+            <Button type="primary" href="https://calendly.com/reckziegel-william/30min">Schedule p call</Button>
             <div className="mt-10">
               <Socials />
             </div>
@@ -23,20 +23,20 @@ const Footer = ({}) => {
       <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
         Made With ❤ by{" "}
         <Link href="http://www.renderex.netlify.app">
-          <a className="underline underline-offset-1">William Reckziegel</a>
+          <p className="underline underline-offset-1">William Reckziegel</p>
         </Link>
       </h1>
       <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
         © 2023 by William Reckziegel. Proudly created with{" "}
         <Link href="https://nextjs.org/">
-          <a className="underline underline-offset-1">Next.js</a>
+          <p className="underline underline-offset-1">Next.js</p>
         </Link>
       </h1>
       <h1 className="text-sm text-bold mt-1 laptop:mt-10 p-2 laptop:p-0">
         Inspired by 
         <Link href="https://www.chetanverma.com/">
-          <a className="text-sm"
-            >Chetan Verma</a>
+          <p className="text-sm"
+            >Chetan Verma</p>
         </Link>
       </h1>
     </>
